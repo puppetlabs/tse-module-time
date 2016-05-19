@@ -5,12 +5,12 @@ class tse-module-time (
   case $::kernal {
       'Linux': {
 
-        include module puppetlabs/ntp
-
-        class ntp{}
-
+        class { '::ntp':
+          servers => $servers,
         }
+
       }
+
 
       'windows': {
 

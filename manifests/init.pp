@@ -1,5 +1,5 @@
 class tse-module-time (
-    $time_servers => ['time.example.com']
+    $servers => ['time.example.com']
 ) {
 
   case $::osfamily {

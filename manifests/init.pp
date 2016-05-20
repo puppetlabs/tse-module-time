@@ -54,7 +54,7 @@ class time (
         # create a new numbered registry value for each ntp server (1 to $servers.length) 
         $servers.each |$index, $srv| { 
           $i = $index + 1
-          registry_value { "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DateTime\Servers\\${i}":
+          registry_value { "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DateTime\\Servers\\${i}":
             ensure => present,
             type   => 'string',
             data   => $srv,
@@ -95,6 +95,3 @@ class time (
     }
 
   }
-
-
-}

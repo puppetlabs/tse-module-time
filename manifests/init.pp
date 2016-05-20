@@ -4,12 +4,12 @@ class time (
 ) {
   case $::kernel {
     'Linux': {
-      class { '::ntp':
+      class { 'ntp':
         servers => $servers,
       }
     }
     'windows': {
-      class { '::winntp':
+      class { 'winntp':
         servers => $servers,
       }
     }

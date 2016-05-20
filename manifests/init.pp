@@ -7,12 +7,12 @@ class time (
     Boolean $purge_unmanaged_servers  = true,
 ) {
 
-  notify {"what time is it? \n":}
+  #notify {"what time is it? \n":}
 
   case $::kernel {
     'Linux': {
 
-      notify {"Linux Time! \n":}
+      #notify {"Linux Time! \n":}
 
       class { '::ntp':
         servers => $servers,
@@ -20,7 +20,7 @@ class time (
     }
     'windows': {
 
-      notify {"windows Time! \n":}
+      #notify {"windows Time! \n":}
 
       $ntp_servers = join(suffix($servers, ',0x09'), ' ')
 
@@ -88,7 +88,7 @@ class time (
       }
     }
     default: {
-      notify {'panic':}
+      notify {'OS Kernal did not match any listed.':}
     }
   }
 }

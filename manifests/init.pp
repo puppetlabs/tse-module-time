@@ -8,7 +8,6 @@ class tse-module-time (
         class { '::ntp':
           servers => $servers,
         }
-
       }
 
 

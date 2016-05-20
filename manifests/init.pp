@@ -1,6 +1,6 @@
 class time (
     # set basic params
-    Array[String] $servers => ['time.example.com'],
+    Array[String] $servers = ['time.example.com'],
     Integer $special_poll_interval    = 900, # 15 minutes
     Integer $max_pos_phase_correction = 54000, # 15 hrs
     Integer $max_neg_phase_correction = 54000, # 15 hrs

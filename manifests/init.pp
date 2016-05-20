@@ -1,9 +1,18 @@
-class tse-module-time (
-    $servers => ['time.example.com']
+class time (
+    # set basic params
+    Array[String] $servers => ['time.example.com'],
+    Integer $special_poll_interval    = 900, # 15 minutes
+    Integer $max_pos_phase_correction = 54000, # 15 hrs
+    Integer $max_neg_phase_correction = 54000, # 15 hrs
+    Boolean $purge_unmanaged_servers  = true,
 ) {
+
+  Notify {"what time is it? \n":}
 
   case $::kernal {
       'Linux': {
+
+        Notify{"Linux Time! \n":}
 
         class { '::ntp':
           servers => $servers,
@@ -13,11 +22,7 @@ class tse-module-time (
 
       'windows': {
 
-        # set basic params
-        Integer $special_poll_interval    = 900, # 15 minutes
-        Integer $max_pos_phase_correction = 54000, # 15 hrs
-        Integer $max_neg_phase_correction = 54000, # 15 hrs
-        Boolean $purge_unmanaged_servers  = true,
+        Notify{"windows Time! \n":}
 
         $ntp_servers = join(suffix($servers, ',0x09'), ' ')
 

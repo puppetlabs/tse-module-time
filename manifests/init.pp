@@ -12,7 +12,7 @@ class time (
   case $::kernal {
       'Linux': {
 
-        Notify{"Linux Time! \n":}
+        Notify {"Linux Time! \n":}
 
         class { '::ntp':
           servers => $servers,
@@ -22,7 +22,7 @@ class time (
 
       'windows': {
 
-        Notify{"windows Time! \n":}
+        Notify {"windows Time! \n":}
 
         $ntp_servers = join(suffix($servers, ',0x09'), ' ')
 

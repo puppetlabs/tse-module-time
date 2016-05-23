@@ -1,20 +1,16 @@
 class time (
-    # set basic params
-    Array[String] $servers = ['time.example.com'],
+  Optional[Array[String]] $servers = undef,
 ) {
   case $::kernel {
-    'Linux': {
-      class { 'ntp':
-        servers => $servers,
-      }
-    }
     'windows': {
       class { 'winntp':
         servers => $servers,
       }
     }
     default: {
-      notify {'OS Kernal did not match any listed.':}
+      class { 'ntp':
+        servers => $servers,
+      }
     }
   }
 }

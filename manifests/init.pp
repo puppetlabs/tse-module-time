@@ -3,14 +3,10 @@ class time (
 ) {
   case $::kernel {
     'windows': {
-      class { 'winntp':
-        servers => $servers,
-      }
+      class { 'winntp': servers => $servers, }
     }
     default: {
-      class { 'ntp':
-        servers => $servers,
-      }
+      class { 'ntp': servers => $servers, }
     }
   }
 }

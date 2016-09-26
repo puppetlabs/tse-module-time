@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Puppet Labs TSE Team",
   "license": "Apache-2.0",
-  "summary": "Wrapper module that uses windows and \*nix specific modules to set time universally",
+  "summary": "Wrapper module that uses windows and *nix specific modules to set time universally",
   "source": "https://github.com/puppetlabs/tse-module-time",
   "project_page": "https://github.com/puppetlabs/tse-module-time",
   "dependencies": [ ],

@@ -1,0 +1,29 @@
+{
+  "name": "time",
+  "version": "1.0.0",
+  "author": "Puppet Labs TSE Team",
+  "license": "Apache-2.0",
+  "summary": "Wrapper module that uses windows and \*nix specific modules to set time universally",
+  "source": "https://github.com/puppetlabs/tse-module-time",
+  "project_page": "https://github.com/puppetlabs/tse-module-time",
+  "dependencies": [ ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Windows",
+      "operatingsystemrelease": [
+        "Server 2012 R2",
+        "Server 2008 R2"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">=2015.1.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">=4.0.0"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
 1. [Overview](#overview)
 2. [Module Description - What the module does and why it is useful](#module-description)
 3. [Setup - Installation and dependencies](#setup)
-4. [Example - Example usage code with description](#example)
+4. [Usage - Example usage code with description](#example)
 5. [Limitations - OS compatibility, etc.](#limitations)
 
 ##Overview
@@ -19,7 +19,7 @@ This module requires the [winntp](https://github.com/jpadams/winntp) and [ntp](h
 ##Setup
 
 
-##Example
+##Usage
 ```puppet
   include 'time'
 

@@ -25,7 +25,7 @@ In this example the windows/\*nix servers will ensure that time syncronization i
 
 In this example the two servers that are passed as variables will be set on all servers
 ```puppet
-  class { 'winntp':
+  class { 'time':
     servers => ['time.nist.gov', 'north-america.pool.ntp.org'],
   }
 ```

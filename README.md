@@ -19,16 +19,16 @@ This module requires the [winntp](https://github.com/jpadams/winntp) and [ntp](h
 
 ###Basic OS default example
 In this example the windows/\*nix servers will ensure that time syncronization is occuring to their default servers:
-'''puppet
+```puppet
   include 'time'
-'''
+```
 
 In this example the two servers that are passed as variables will be set on all servers
-'''puppet
+```puppet
   class { 'winntp':
     servers => ['time.nist.gov', 'north-america.pool.ntp.org'],
   }
-'''
+```
 
 ##Limitations
 The module is compatiable with Linux and Windows machines.

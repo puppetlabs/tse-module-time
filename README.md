@@ -1,11 +1,11 @@
-# tse-time
+# time
 
 ####Table of Contents
 
 1. [Overview](#overview)
 2. [Module Description - What the module does and why it is useful](#module-description)
-3. [Setup - The basics of getting started with stdlib](#setup)
-4. [Usage - Configuration options and additional functionality](#usage)
+3. [Setup - Installation and dependencies](#setup)
+4. [Example - Example usage code with description](#example)
 5. [Limitations - OS compatibility, etc.](#limitations)
 
 ##Overview
@@ -16,7 +16,10 @@ This module is designed as a wrapper for two modules: one that manages the Windo
 
 This module requires the [winntp](https://github.com/jpadams/winntp) and [ntp](https://github.com/puppetlabs/puppetlabs-ntp) modules that are found at their appropriate links. 
 
-# Example #
+##Setup
+
+
+##Example
 ```puppet
   include 'time'
 

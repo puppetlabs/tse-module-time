@@ -9,11 +9,7 @@
   "dependencies": [ ],
   "operatingsystem_support": [
     {
-      "operatingsystem": "Windows",
-      "operatingsystemrelease": [
-        "Server 2012 R2",
-        "Server 2008 R2"
-      ]
+      "operatingsystem": "Various"
     }
   ],
   "requirements": [

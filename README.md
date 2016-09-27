@@ -5,7 +5,8 @@
 1. [Overview](#overview)
 2. [Module Description - What the module does and why it is useful](#module-description)
 3. [Usage - Example usage code with description](#example)
-4. [Limitations - OS compatibility, etc.](#limitations)
+4. [Parameters](#parameters)
+5. [Limitations - OS compatibility, etc.](#limitations)
 
 ##Overview
 

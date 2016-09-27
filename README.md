@@ -22,13 +22,21 @@ In this example the windows/\*nix servers will ensure that time syncronization i
 ```puppet
   include 'time'
 ```
-
+###Example of setting the time servers to two custom addresses
 In this example the two servers that are passed as variables will be set on all servers
 ```puppet
   class { 'time':
     servers => ['time.nist.gov', 'north-america.pool.ntp.org'],
   }
 ```
+
+##Parameters
+
+The following parameters are available in the `::time` class:
+
+###`servers` (optional)
+Specifies the time servers to be set.  
+Valid Input: Array of strings
 
 ##Limitations
 The module is compatiable with Linux and Windows machines.

@@ -6,7 +6,10 @@
   "summary": "Wrapper module that uses windows and *nix specific modules to set time universally",
   "source": "https://github.com/puppetlabs/tse-module-time",
   "project_page": "https://github.com/puppetlabs/tse-module-time",
-  "dependencies": [ ],
+  "dependencies": [
+    {"name":"tse-winntp","version_requirement":">= 1.0.0"},
+    {"name":"puppetlabs-ntp","version_requirement":">= 4.2.0"}
+  ],
   "operatingsystem_support": [
     {
       "operatingsystem": "Various"

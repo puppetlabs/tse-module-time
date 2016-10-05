@@ -1,6 +1,6 @@
 {
   "name": "tse-time",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Puppet TSE Team",
   "license": "Apache-2.0",
   "summary": "Wrapper module that uses windows and *nix specific modules to set time universally",
